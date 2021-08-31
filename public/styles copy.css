@@ -1,0 +1,95 @@
+.logo {
+    width: 24px;
+    height: auto;
+    position: relative;
+    bottom: 3px;
+}
+
+.nav {
+    padding: 10px;
+}
+
+
+.main-heading {
+    font-size: 60px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 47%;
+    top: 135px;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 1px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+h1, h4, h5, h6 {
+    display: inline;
+}
+
+.informations-div {
+    position: relative;
+    top: 340px;
+    left: 7%;
+    max-width: 70%;
+    
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.card {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.href {
+    text-align: center;
+    color: rgb(121 121 121 / 50%);
+}
+
+.href:hover {
+    color: rgb(70 70 70 / 50%);
+}
+
+.sub {
+    position: relative;
+    top: 207px;
+    left: 85px;
+}
+
+.box {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border: 1px solid black;
+    border-radius: 4%;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}

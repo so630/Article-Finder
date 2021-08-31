@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Article Finder <img class="logo floating" src="/loupe.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+            style="font-size: 20px;">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form action="/logout" method="post">
+                        <button class="nav-link" oncchange="this.form.submit" style="background-color: #343a40; border: 0;">Log Out <span class="sr-only">(current)</span></a>
+                    </form>    
+                        
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Hello, <%= name %></h1>
+                <p>This is the dashboard! Along with the features we already provide such as keyword extraction and article finding using a given phrase, we also keep a history of everything you search, so that you dont need to go search up the keywords for the article again if you wish to check them again!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row" >
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Keyword extraction</h2>
+                        <br>
+                        <p>View your History of keyword extractions </p>
+                        <p><a class="btn btn-secondary" href="/history-keyword" role="button">View History &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>History of Articles</h2>
+                        <br>
+                        <p>View you History of Article findings using phrases</p>
+                        <p><a class="btn btn-secondary" href="/history-article-phrases" role="button">View History &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>History of Articles</h2>
+                        <br>
+                        <p>View your History of similar Article Findings</p>
+                        <p><a class="btn btn-secondary" href="/history-article-topic" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Keyword extraction</h2>
+                        <br>
+                        <p>Extract Keywords from an article</p>
+                        <p><a class="btn btn-secondary" href="/extract" role="button">Extract Keywords &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Find Articles</h2>
+                        <br>
+                        <p>Find Articles similar to another article that you input</p>
+                        <p><a class="btn btn-secondary" href="/find-with-topic" role="button">Find Articles &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Find Articles</h2>
+                        <br>
+                        <p>Find Articles using a given phrase inputed</p>
+                        <p><a class="btn btn-secondary" href="/find-with-phrase" role="button">Find Articles &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- /container -->
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
