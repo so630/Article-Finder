@@ -375,4 +375,6 @@ app.get('/history-article-topic/:__id', function(req, res) {
 
 
 
-app.listen(3000 || process.env.PORT)
+app.listen(process.env.PORT || 3000, function() {
+    console.log('listening on port ' + process.env.PORT || 3000);
+})
