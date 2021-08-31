@@ -208,8 +208,8 @@ app.post('/logout', function(req, res) {
 app.post('/extract-text', function(req, res) {
     const text = req.body.text;
     let data = [text]
-    const ml = new monkeylearn('c7746e6211afdc2215fbc146e82b5b29878f9605')
-    let model_id = 'ex_YCya9nrn'
+    const ml = new monkeylearn(process.env.APP_ID)
+    let model_id = process.env.MODEL_ID
     ml.extractors.extract(model_id, data).then(response => {
         let resp = response.body[0].extractions;
         res.render('extract-result', {keywords: resp})
@@ -220,8 +220,8 @@ app.post('/extract-url', function(req, res) {
     
     Article(String(req.body.url)).then(function(result) {
         let data = [result.text];
-        const ml = new monkeylearn('c7746e6211afdc2215fbc146e82b5b29878f9605')
-        let model_id = 'ex_YCya9nrn'
+        const ml = new monkeylearn(process.env.APP_ID)
+        let model_id = process.env.MODEL_ID
         ml.extractors.extract(model_id, data).then(response => {
             let resp = response.body[0].extractions;
             res.render('extract-result', {keywords: resp})
@@ -232,8 +232,8 @@ app.post('/extract-url', function(req, res) {
 app.post('/extract-text-username', function(req, res) {
     const text = req.body.text;
     let data = [text]
-    const ml = new monkeylearn('c7746e6211afdc2215fbc146e82b5b29878f9605')
-    let model_id = 'ex_YCya9nrn'
+    const ml = new monkeylearn(process.env.APP_ID)
+    let model_id = process.env.MODEL_ID
     let resp;
     ml.extractors.extract(model_id, data).then(response => {
         resp = response.body[0].extractions;
@@ -258,8 +258,8 @@ app.post('/extract-url-username', function(req, res) {
     
     Article(String(req.body.url)).then(function(result) {
         let data = [result.text];
-        const ml = new monkeylearn('c7746e6211afdc2215fbc146e82b5b29878f9605')
-        let model_id = 'ex_YCya9nrn'
+        const ml = new monkeylearn(process.env.APP_ID)
+        let model_id = process.env.MODEL_ID
         let resp;
         ml.extractors.extract(model_id, data).then(response => {
             resp = response.body[0].extractions;
