@@ -12,7 +12,7 @@ const lodash = require('lodash');
 const cookieParser = require('cookie-parser');
 const googleNews = require('google-news-json');
 
-mongoose.connect('mongodb+srv://admin-soham:soham@cluster0.rgrzw.mongodb.net/ArticleUsersDB', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://admin-soham:<password>@cluster0.rgrzw.mongodb.net/ArticleUsersDB', {useNewUrlParser: true, useUnifiedTopology: true})
 
 
 const userSchema = mongoose.Schema({
