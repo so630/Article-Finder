@@ -93,3 +93,14 @@ h1, h4, h5, h6 {
     -webkit-box-shadow: 0 0 3px #ccc;
     box-shadow: 0 0 3px #ccc;
 }
+
+.or {
+    margin-top: 160px;
+    margin-bottom: 40px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 4%;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
