@@ -37,17 +37,17 @@
     </nav>
 
     <main role="main" style="align-items: center; text-align: center;">
-        <h1 style="position: relative; top: 90px; color: white;">EXTRACT KEYWORDS</h1> 
+        <h1 style="position: relative; top: 90px; color: white;">EXTRACT KEYWORDS</h1>
         <div class="or">
-            <div class="form-group" style="position: relative; bottom: 40px; left: 500px;">
-                <form action="/extract-text" method="POST">
+            <div class="form-group" style="position: relative; bottom: 70px; left: 600px;">
+                <form action="/extract-text-username" method="POST">
                     <label for="formGroupExampleInput" style="color: white">Enter the text in the article:</label>
                     <textarea class="form-control textarea" name="text" style="height: 100px" autocomplete="off"></textarea>
                     <button type="submit" class="btn btn-primary btn-light" style="margin-top: 20px;">Submit</button>
                 </form>
             </div>
-            <div class="form-group" style="position: relative; top: 40px; right: 500px;">    
-                <form action="/extract-url" method="POST">
+            <div class="form-group" style="position: relative; top: 130px; right: 600px;">    
+                <form action="/extract-url-username" method="POST">
                     <label for="formGroupExampleInput">Enter the url for the article: </label>
                     <input type="text" class="form-control" name="url" autocomplete="off">
                     <button type="submit" class="btn btn-primary btn-dark" style="margin-top: 20px;">Submit</button>
